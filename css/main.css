@@ -1,1 +1,31 @@
 @charset "utf-8";
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+body{
+    background: url(../img/back2.jpg)
+    no-repeat fixed center/cover;
+}
+.logo img{
+    margin-top: 45px;
+    margin-left: 70px;
+}
+#cbx{
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+    outline: 5px dashed yellow;
+}
+#clb::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cat{
+    width: 25%;
+    float: left;
+}
