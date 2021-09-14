@@ -1,6 +1,62 @@
 @charset "utf-8";
 
-body{
-    background: url(../img/back1.jpg)
-    no-repeat fixed center/cover;
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.gnb ul::after,ol::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+li{
+    float: left;
+}
+.gnb{
+    background-color: #b11212;
+}
+.gnb>ul{
+    width: 800px;
+    margin: 0 auto;
+}
+.gnb>ul>li{
+    width: 200px;
+    text-align: center;
+    outline: 2px dashed lime;
+}
+.gnb>ul>li a{
+    width: 200px;
+    height: 50px;
+    display: block;
+
+    color: #fff;
+    text-decoration: none;
+
+    line-height: 50px;
+
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+/* 서브메뉴 */
+.smenu{
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    overflow: hidden;
+    height: 0;
+}
+/* 두번째메뉴 */
+.gnb>ul>li:nth-child(2):hover .smenu{
+    height: 200px;
+}
+/* 세번째메뉴 */
+.gnb>ul>li:nth-child(3):hover .smenu{
+    height: 100px;
+}
+.smenu a:hover{
+    color: #000;
+    background-color: #fff;
 }
