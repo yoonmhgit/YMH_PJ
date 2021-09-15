@@ -10,11 +10,15 @@ ul,ol{
     display: block;
     clear: both;
 }
+body{
+    background: url(../img/back2.jpg)
+    no-repeat fixed center/cover;
+}
 li{
     float: left;
 }
 .gnb{
-    background-color: #b11212;
+    background-color: transparent;
 }
 .gnb>ul{
     width: 800px;
@@ -57,6 +61,13 @@ li{
     height: 100px;
 }
 .smenu a:hover{
-    color: #000;
-    background-color: #fff;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+}
+/* 메뉴폰트 */
+.nav{
+    @font-face {
+        font-family: ow;
+        src: url();
+    }
 }
