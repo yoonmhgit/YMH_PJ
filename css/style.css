@@ -22,7 +22,7 @@ font-family: 'Bebas Neue', cursive;
     text-decoration: none;
 
     line-height: 50px;
-    font-size: 60px;
+    font-size: 40px;
 }
 /* 서브메뉴글씨 */
 .gnb>ul>li>.smenu a {
@@ -37,7 +37,7 @@ font-family: 'Bebas Neue', cursive;
     line-height: 50px;
 
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 body,html{
     margin: 0;
@@ -111,4 +111,24 @@ li {
 .smenu a:hover {
     color: red;
     background-color: rgba(255, 255, 255, 0);
+}
+/* 로고 */
+h1.logo{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* 내부에 있는 인라인 컨텐츠 중앙정렬 */
+}
+h1.logo img{ 
+   width: 250px;
+}
+/* 메인영역 */
+.cont{
+    min-height: 800px;
+}
+#cbx{
+    position: relative;
+    top: 400px;
+    width: 90%;
+    margin: 0 auto;
 }
