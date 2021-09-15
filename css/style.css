@@ -34,13 +34,13 @@ li{
     height: 50px;
     display: block;
 
-    color: #fff;
+    color: red;
     text-decoration: none;
 
     line-height: 50px;
 
     font-weight: bold;
-    font-size: 15px;
+    font-size: 30px;
 
 }
 
@@ -64,10 +64,13 @@ li{
     color: red;
     background-color: rgba(255, 255, 255, 0);
 }
+
 /* 메뉴폰트 */
-.nav{
     @font-face {
         font-family: ow;
-        src: url();
+        src: url(../fonts/Oswald-VariableFont_wght.woff) format("woff");
     }
+.gnb{
+    font-family: ow;
+    color: red;
 }
