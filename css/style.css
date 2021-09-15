@@ -1,36 +1,33 @@
 @charset "utf-8";
+/* 추가할것 - 로봇피제이에서 애니메이션효과와 캐릭터설명응용 */
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200&family=Bebas+Neue&display=swap');
 
-ul,ol{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.gnb ul::after,ol::after{
-    content: '';
+/* 
+font-family: 'Azeret Mono', monospace;
+font-family: 'Bebas Neue', cursive;
+*/
+
+/* 메뉴글씨 */
+.gnb>ul>li>a {
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 4px 4px 4px #000;
+    letter-spacing: 4px;
+    color: rgb(236, 17, 17);
+
+    width: 300px;
+    height: 80px;
     display: block;
-    clear: both;
+
+    text-decoration: none;
+
+    line-height: 50px;
+    font-size: 60px;
 }
-body{
-    background: url(../img/back2.jpg)
-    no-repeat fixed center/cover;
-}
-li{
-    float: left;
-}
-.gnb{
-    background-color: transparent;
-}
-.gnb>ul{
-    width: 800px;
-    margin: 0 auto;
-}
-.gnb>ul>li{
-    width: 200px;
-    text-align: center;
-    outline: 2px dashed lime;
-}
-.gnb>ul>li a{
-    width: 200px;
+/* 서브메뉴글씨 */
+.gnb>ul>li>.smenu a {
+    font-family: 'Azeret Mono', monospace;
+    width: 300px;
     height: 50px;
     display: block;
 
@@ -41,26 +38,77 @@ li{
 
     font-weight: bold;
     font-size: 30px;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+body {
+    background: url(../img/back2.jpg) no-repeat fixed center/cover;
+}
+
+.gnb ul::after,
+ol::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+.gnb {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.gnb>ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 텍스트박스 */
+.gnb>ul>li {
+    margin: 20px;
+    width: 230px;
+    text-align: center;
+    /* outline: 2px dashed lime; */
+}
+
+/* 마우스오버 */
+.gnb>ul>li>a:hover {
+    border-bottom: 4px solid red;
 }
 
 /* 서브메뉴 */
-.smenu{
+.smenu {
     position: absolute;
-    width: 200px;
-    background-color: #fff;
+    width: 295px;
+    background-color: rgba(255, 255, 255, 0.523);
     overflow: hidden;
     height: 0;
+    transition: height .4s ease-out;
 }
+
 /* 두번째메뉴 */
-.gnb>ul>li:nth-child(2):hover .smenu{
+.gnb>ul>li:nth-child(2):hover .smenu {
     height: 200px;
 }
+
 /* 세번째메뉴 */
-.gnb>ul>li:nth-child(3):hover .smenu{
+.gnb>ul>li:nth-child(3):hover .smenu {
     height: 100px;
 }
-.smenu a:hover{
+
+.smenu a:hover {
     color: red;
     background-color: rgba(255, 255, 255, 0);
 }
