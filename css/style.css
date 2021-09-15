@@ -123,12 +123,32 @@ h1.logo img{
    width: 250px;
 }
 /* 메인영역 */
+
 .cont{
     min-height: 800px;
+    background-color: red;
 }
 #cbx{
     position: relative;
-    top: 400px;
-    width: 90%;
+    width: 100%;
+    top: 60px;
+    background-color: #fff;
     margin: 0 auto;
 }
+.clb::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cat{
+    width: 25%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+.ci>img{
+    width: 60%;
+}
+
+/* 마우스 오버 */
