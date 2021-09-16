@@ -39,22 +39,34 @@ font-family: 'Bebas Neue', cursive;
     font-weight: bold;
     font-size: 20px;
 }
+/* 초기화 */
 body,html{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
-ul,
-ol {
+/* 메뉴공통초기화 */
+ul,ol {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+/* 스크롤바 */
+.scbar::-webkit-scrollbar{
+    width: 7px;
+}
+.scbar::-webkit-scrollbar-thumb{
+    background-color: #666;
+    border-radius: 5px;
+}
+.scbar::-webkit-scrollbar-track{
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
 body {
     background: url(../img/back2.jpg) no-repeat fixed center/cover;
 }
-
+/* 메뉴플롯해제 */
 .gnb ul::after,
 ol::after {
     content: '';
@@ -113,7 +125,7 @@ li {
     background-color: rgba(255, 255, 255, 0);
 }
 /* 로고 */
-h1.logo{
+.logo{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -122,33 +134,39 @@ h1.logo{
 h1.logo img{ 
    width: 250px;
 }
-/* 메인영역 */
 
+/* 메인영역 */
 .cont{
-    min-height: 800px;
+    min-height: 1000px;
     background-color: red;
 }
+/* 캐릭터박스 */
 #cbx{
     position: relative;
+    top: 10px;
     width: 100%;
-    top: 60px;
-    background-color: #fff;
     margin: 0 auto;
+    background-color: #fff;
 }
 .clb::after{
     content: '';
     display: block;
     clear: both;
 }
-.cat{
-    width: 25%;
+/* 개별캐릭터박스공통 */
+.cat>div{
+    width: 12%;
     float: left;
     padding: 5px;
     box-sizing: border-box;
-    background-color: blue;
+    outline: 2px dotted greenyellow;
 }
 .ci>img{
-    width: 60%;
+    width: 80%;
+    padding: 20px;
 }
-
-/* 마우스 오버 */
+.cb1{
+    background: url(../img/1-2.jpg);
+    overflow: auto;
+    
+}
