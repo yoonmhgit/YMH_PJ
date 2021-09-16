@@ -148,14 +148,18 @@ h1.logo img{
     margin: 0 auto;
     background-color: #fff;
 }
-.clb::after{
+.cat::after,#cbx::after{
     content: '';
     display: block;
     clear: both;
 }
+.cat{
+    width: 25%;
+    float: left;
+}
 /* 개별캐릭터박스공통 */
 .cat>div{
-    width: 12%;
+    width: 50%;
     float: left;
     padding: 5px;
     box-sizing: border-box;
@@ -166,7 +170,9 @@ h1.logo img{
     padding: 20px;
 }
 .cb1{
-    background: url(../img/1-2.jpg);
+    background: url(../img/1-2.jpg) no-repeat top/100%;
     overflow: auto;
-    
+}
+.cat:hover>div:last-child{
+    height: 200px;
 }
