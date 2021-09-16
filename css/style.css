@@ -8,6 +8,15 @@ font-family: 'Azeret Mono', monospace;
 font-family: 'Bebas Neue', cursive;
 */
 
+.logo{
+    text-align: center;
+}
+.logo img{
+    max-height: 200px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 /* 메뉴글씨 */
 .gnb>ul>li>a {
     font-family: 'Bebas Neue', cursive;
@@ -15,8 +24,8 @@ font-family: 'Bebas Neue', cursive;
     letter-spacing: 4px;
     color: rgb(236, 17, 17);
 
-    width: 300px;
-    height: 80px;
+    width: 240px;
+    height: 40px;
     display: block;
 
     text-decoration: none;
@@ -27,7 +36,7 @@ font-family: 'Bebas Neue', cursive;
 /* 서브메뉴글씨 */
 .gnb>ul>li>.smenu a {
     font-family: 'Azeret Mono', monospace;
-    width: 300px;
+    width: 230px;
     height: 50px;
     display: block;
 
@@ -103,7 +112,7 @@ li {
 /* 서브메뉴 */
 .smenu {
     position: absolute;
-    width: 295px;
+    width: 230px;
     background-color: rgba(255, 255, 255, 0.523);
     overflow: hidden;
     height: 0;
@@ -124,55 +133,97 @@ li {
     color: red;
     background-color: rgba(255, 255, 255, 0);
 }
-/* 로고 */
-.logo{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    /* 내부에 있는 인라인 컨텐츠 중앙정렬 */
-}
-h1.logo img{ 
-   width: 250px;
-}
 
-/* 메인영역 */
+
+/* _________________________________________________________________________________________ */
+
+/* 메인 */
+
 .cont{
-    min-height: 1000px;
-    background-color: red;
+    min-height: 700px;
+    /* background-color: #fff; */
 }
-/* 캐릭터박스 */
 #cbx{
     position: relative;
-    top: 10px;
     width: 100%;
+    top: 20px;
+    /* height: 545px; */
     margin: 0 auto;
-    background-color: #fff;
+    /* background-color: green; */
 }
-.cat::after,#cbx::after{
+.cont::after{
+    content: '';/* 필수속성 */
+    display: block;/* clear속성적용위해 */
+    clear: both;/* float해제 */
+}
+.cont div{
+    width: 25%;
+    /* height: 485px; */
+    /* margin-left: 70px; */
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+/* 이미지 사이즈 */
+#cbx>div img{
+    width: 90%;
+}
+.cm1{
+    height: 0;
+    overflow: auto;
+    margin-top: 20px;
+    background: url(../img/1-2.jpg) no-repeat;
+    background-size: 200px auto;
+}
+/* 하단영역 */
+.info{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+/* 하단링크 */
+ul.bm{
+    width: 720px;
+    max-width: 90%;
+
+    margin: 0 auto; /* 마영오! */
+    padding: 0;
+    list-style: none;
+        /* 3무 */
+
+}
+ul.bm::after{ /* 플롯해제 */
     content: '';
     display: block;
     clear: both;
 }
-.cat{
-    width: 25%;
+ul.bm li{
     float: left;
+    padding: 0 5px; /* 글자 사이사이 */
 }
-/* 개별캐릭터박스공통 */
-.cat>div{
-    width: 50%;
-    float: left;
-    padding: 5px;
-    box-sizing: border-box;
-    outline: 2px dotted greenyellow;
+
+ul.bm a{
+    color: #222;
+    text-decoration: none;/* 밑줄없앰 */
+    font: bold 14px/2 "맑은 고딕";
 }
-.ci>img{
-    width: 80%;
-    padding: 20px;
+ul.bm a:hover{
+    color: red;
+    text-decoration: underline;/* 밑줄 */
 }
-.cb1{
-    background: url(../img/1-2.jpg) no-repeat top/100%;
-    overflow: auto;
+
+/* 주소박스 */
+.info address{
+    width: 720px;
+    max-width: 90%;
+
+    margin: 10px auto; /* 위아래 20px 양쪽오토(중앙) */
+    font: normal 12px/2 "맑은 고딕";
+    text-align: center;/* 글자중앙 */
+
+    border: 5px double #555;
+    padding: 10px 0;/* 위아래 10px 양쪽0 */
 }
-.cat:hover>div:last-child{
-    height: 200px;
+/* 하단로고박스 */
+#blogo{
+    text-align: center;/* 인라인요소 중앙정렬 */
 }
