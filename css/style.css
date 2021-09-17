@@ -140,41 +140,11 @@ li {
 /* 메인 */
 
 .cont{
-    min-height: 700px;
-    /* background-color: #fff; */
-}
-#cbx{
     position: relative;
-    width: 100%;
-    top: 20px;
-    /* height: 545px; */
-    margin: 0 auto;
-    /* background-color: green; */
+    min-height: 700px;
+    background-color: #fff;
 }
-.cont::after{
-    content: '';/* 필수속성 */
-    display: block;/* clear속성적용위해 */
-    clear: both;/* float해제 */
-}
-.cont div{
-    width: 25%;
-    /* height: 485px; */
-    /* margin-left: 70px; */
-    padding: 50px;
-    box-sizing: border-box;
-    float: left;
-}
-/* 이미지 사이즈 */
-#cbx>div img{
-    width: 90%;
-}
-.cm1{
-    height: 0;
-    overflow: auto;
-    margin-top: 20px;
-    background: url(../img/1-2.jpg) no-repeat;
-    background-size: 200px auto;
-}
+
 
 /* ____________________________________________________________________________________ */
 
