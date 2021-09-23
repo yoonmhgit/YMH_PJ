@@ -4,7 +4,7 @@
 @import url(./reset.css);
 
 body{
-    background: #056923;
+    background: #000000;
 }
 .part{
     width: 1200px;
@@ -16,7 +16,8 @@ body{
 #top{
     position: relative;
     height: 90px;
-    /* background: url(); */
+    background: url(../img/topback.jpg);
+    z-index: 999;
 }
 
 /* *****상단타이틀***** */
@@ -62,6 +63,7 @@ body{
     padding: 3px;
     border-radius: 5px;
     display: none;
+    background: url(../img/smenu.png);
 }
 .gnb>ul>li:hover .smenu{
     display: block;
@@ -85,7 +87,7 @@ body{
 #cont{
     position: relative;
     height: 788px;
-    /* background: url(); */
+    background: url(../img/back.jpg);
 }
 
 
