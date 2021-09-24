@@ -7,9 +7,13 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p{
 }
 /* a요소 */
 a{
-    color: white;
+    color: #000;
     text-decoration: none;
 }
+/* .smenu>li a{
+    color: #ca6f0e;
+    text-decoration: none;
+} */
 /* ul,ol리셋 */
 ul,ol{
     list-style: none;

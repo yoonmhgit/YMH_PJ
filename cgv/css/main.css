@@ -43,6 +43,10 @@ body{
     bottom: 10px;
     right: 18px;
 }
+.glist{
+    position: relative;
+    z-index: 1;
+}
 .gnb li{
     position: relative;
     padding: 0 10px;
@@ -63,21 +67,40 @@ body{
     padding: 3px;
     border-radius: 5px;
     display: none;
-    background: url(../img/smenu.png);
+    background: url(../img/smenu.png) no-repeat center/cover;
 }
 .gnb>ul>li:hover .smenu{
     display: block;
 }
+/* 삼각형 */
+.smenu::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #ca6f0e;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
 .smenu ol{/* 서브메뉴 테두리 */
     padding: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #ca6f0e;
 }
 .smenu li{
     float: none;
     font-size: 14px;
     line-height: 2px;
+    color: #000000;
 }
-
+/* 
+.smenu a:hover::after{
+    
+} */
 
 
 
