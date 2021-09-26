@@ -53,7 +53,7 @@ body{
 }
 .gnb li{
     position: relative;
-    padding: 0 10px;
+    padding: 0 17px;
     padding-bottom: 5px;
     font-size: 19px;
     font-family: 'Kosugi Maru', sans-serif;
@@ -135,6 +135,20 @@ body{
     border: none;
     border-radius: 50px;
 }
+/* 포스터 */
+.mlist{
+    position: absolute;
+    bottom: 166px;
+    left: 236px;
+    overflow: hidden;
+}
+.mlist ul>li{
+    /* margin: 0 10px; */
+}
+/* .mlist img{
+    width: 99px;
+    height: 140px;
+} */
 
 
 
@@ -147,11 +161,11 @@ body{
     color: #616161;
     font-style: normal;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 17px;
-    line-height: 33px;
+    font-size: 14px;
+    line-height: 23px;
 
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 #info img{
     float: left;
