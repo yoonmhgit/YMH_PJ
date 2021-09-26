@@ -6,3 +6,46 @@
 html,body{
     height: 100%;
 }
+
+#myvid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #000;
+    opacity: 0.2; */
+}
+
+#enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* 로고 */
+
+#enter img{
+    opacity: 0;
+    animation: logo 1s ease-in-out 6s forwards;
+}
+
+@keyframes logo {
+    to{
+        opacity: 1;
+    }
+    /* from{
+        opacity: 0;
+    } */
+}
+

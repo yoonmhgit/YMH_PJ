@@ -29,7 +29,16 @@ body{
     text-align: center;
     font-family: 'Kosugi Maru', sans-serif;
     text-shadow: 0 0 14px #e9e459;
+    animation: titani 1s .3s ease-in-out infinite alternate;
 }
+@keyframes titani {
+    to{
+        text-shadow: 0 0 6px rgb(98, 114, 7);
+    }
+}
+
+/* 타이틀애니 */
+
 
 .tite{
     color: rgb(255, 255, 0);
@@ -45,7 +54,7 @@ body{
 .gnb{
     position: absolute;
     bottom: 10px;
-    right: 18px;
+    right: 15px;
 }
 .glist{
     position: relative;
@@ -53,9 +62,9 @@ body{
 }
 .gnb li{
     position: relative;
-    padding: 0 17px;
+    padding: 0 10px;
     padding-bottom: 5px;
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'Kosugi Maru', sans-serif;
 }
 
@@ -66,12 +75,12 @@ body{
     transform: translateX(-50%);
     margin-top: 5px;
     width: 150px;
-    /* background: url() no-repeat center/cover; */
-    /* box-shadow: 0 0 5px #fff; */
+
     padding: 3px;
     border-radius: 5px;
     display: none;
     background: url(../img/smenu.png) no-repeat center/cover;
+    box-shadow: 0 0 5px #fff;
 }
 .gnb>ul>li:hover .smenu{
     display: block;
@@ -81,7 +90,7 @@ body{
     content: '';
     display: block;
     position: absolute;
-    top: -7px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -98,14 +107,19 @@ body{
 }
 .smenu li{
     float: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2px;
     color: #000000;
 }
+.smenu a:hover{
+    color: red;
+}
+.smenu a:hover::after{
+content: '';
+float: right;
+font-weight: bold;
+}
 
-/* .smenu a:hover::after{
-    content: '';
-} */
 
 
 
@@ -138,18 +152,48 @@ body{
 /* 포스터 */
 .mlist{
     position: absolute;
-    bottom: 166px;
-    left: 236px;
+    bottom: 190px;
+    left: 224px;
     overflow: hidden;
 }
 .mlist ul>li{
-    /* margin: 0 10px; */
+    margin: 0 60px;
 }
-/* .mlist img{
-    width: 99px;
-    height: 140px;
-} */
+.mlist img{
+    width: 127px;
+    height: 179px;
+}
+.movtxt{
+    position: absolute;
+    top: 100%;
 
+    width: 127px;
+    height: 179px;
+    background-color: rgba(0, 0, 0, 0.685);
+
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+
+    transition: top .4s ease-out;
+}
+
+.movtxt li{
+    float: none;
+}
+
+.movtxt li:first-child{
+    color: rgb(255, 255, 0);
+    font-size: 15px;
+    letter-spacing: -1px;
+    margin-top: 50px;
+}
+
+.mlist>ul>li:hover .movtxt{
+    top: 0;
+}
 
 
 /* _______________________________하단영역______________________________________ */
