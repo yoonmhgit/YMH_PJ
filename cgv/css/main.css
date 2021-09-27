@@ -277,9 +277,9 @@ font-weight: bold;
     background: url(../img/spirite.png);
     /* filter: grayscale(100%); */
 }
-.sns li:hover{
+/* .sns li:hover{
     filter: grayscale(0%);
-}
+} */
 /* 페이스북 */
 .sns li:first-child{
     background-position: 956px 442px;
