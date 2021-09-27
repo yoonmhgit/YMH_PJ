@@ -17,7 +17,7 @@ body{
     position: relative;
     height: 90px;
     background: url(../img/topback.jpg);
-    outline: 3px groove yellow;
+    outline: 3px outset rgb(223, 248, 1);
    
     z-index: 999;
 }
@@ -69,14 +69,16 @@ body{
     padding-bottom: 5px;
     font-size: 20px;
     font-family: 'Kosugi Maru', sans-serif;
+
 }
+
 
 /* 서브메뉴 */
 .smenu{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 5px;
+    margin-top: 15px;
     width: 150px;
 
     background: url(../img/smenu.png) no-repeat center/cover;
@@ -178,16 +180,16 @@ font-weight: bold;
 #cont{
     position: relative;
     height: 788px;
-    background: url(../img/back.jpg);
+    background: url(../img/back.jpg) no-repeat;
 }
 #screen{
     position: absolute;
-    top: 164px;
+    top: 165px;
     left: 776px;
     width: 186px;
     height: 157px;
     background-color: #fff;
-    border-radius: 40px;
+    border-radius: 35px;
     overflow: hidden;
 }
 #screen iframe{
