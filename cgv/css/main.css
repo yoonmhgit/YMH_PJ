@@ -70,9 +70,17 @@ body{
     padding-bottom: 5px;
     font-size: 20px;
     font-family: 'Kosugi Maru', sans-serif;
-
 }
-
+.gnb>ul>li>a{
+    color: #e8f008;
+    text-shadow: 0 0 14px #e1dd71;
+    animation: titani 1s .3s ease-in-out infinite alternate;
+}
+@keyframes titani {
+    to{
+        text-shadow: 0 0 6px rgb(98, 114, 7);
+    }
+}
 
 /* 서브메뉴 */
 .smenu{
