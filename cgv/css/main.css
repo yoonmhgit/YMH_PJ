@@ -17,7 +17,8 @@ body{
     position: relative;
     height: 90px;
     background: url(../img/topback.jpg);
-    outline: 3px outset rgb(223, 248, 1);
+    outline: 3px solid rgb(228, 240, 125);
+    box-shadow: 1px 7px 16px 3px rgb(245, 245, 48);
    
     z-index: 999;
 }
@@ -112,6 +113,7 @@ body{
 }
 .smenu li{
     float: none;
+    font-family: 'Kosugi Maru', sans-serif;
     font-size: 16px;
     line-height: 2px;
     color: #000000;
