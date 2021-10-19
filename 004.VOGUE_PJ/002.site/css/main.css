@@ -13,19 +13,15 @@
 }
 
 
-
-
 /* _________________________________________2.메인영역___________________________________________ */
 .cont>div{
     outline: 2px dashed red;
 }
 
 
-
-
 /* 1번 컨텐츠 */
 .bg1{
-    background-image: url(../images/cont1a.jpg);
+    background-image: url(../img/style_615d5b8cf241f.jpg);
 }
 /* 2번 3등분 컨텐츠 */
 .bg2{
@@ -41,44 +37,6 @@
 .bg5{
     background-image: url(../images/cont3a.jpg);
 }
-/* 4번 3등분 컨텐츠 */
-.bg6{
-    background-image: url(../images/cont4-1.jpg);
-}
-.bg7{
-    background-image: url(../images/cont4-2.jpg);
-}
-.bg8{
-    background-image: url(../images/cont4-3.jpg);
-}
-/* 5번 컨텐츠 */
-.bg9{
-    background-image: url(../images/cont5a.jpg);
-}
-/* 6~8번 3등분 컨텐츠 */
-.bg10{
-    background-image: url(../images/cont6-1.png);
-}
-.bg11{
-    background-image: url(../images/cont6-2.jpg);
-}
-.bg12{
-    background-image: url(../images/cont6-3.png);
-}
-/* 4번 3등분 컨텐츠 */
-.bg13{
-    background-image: url(../images/cont7-1.jpg);
-}
-.bg14{
-    background-image: url(../images/cont7-2.jpg);
-}
-.bg15{
-    background-image: url(../images/cont7-3.jpg);
-}
-
-
-
-
 
 /* 파트타입1 - 이미지1개
 .pt1{

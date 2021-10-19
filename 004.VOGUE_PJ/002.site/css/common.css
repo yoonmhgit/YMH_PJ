@@ -6,9 +6,9 @@
 */
 
 /* 공사중 외곽선 */
-/* body * {
+body * {
     outline: 1px dashed rgb(99, 99, 99);
-} */
+}
 /* _________________________________________1.상단공통영역___________________________________________ */
 #top {
     /* 상단 최상위 부모박스에 박스그림자 */
@@ -298,116 +298,6 @@
 }
 
 
-/* ________________________________________모바일 메뉴영역______________________________________________ */
-
-/* 모바일 전용버튼 */
-.mobtn {
-    /* 공통 */
-    position: absolute;
-    /* 부모는? #top(모바일에서 fixed) */
-    width: 21px;
-    height: 21px;
-    top: 50%;
-    transform: translateY(-50%);
-    /* 세로중앙이동 */
-    display: none;
-    /* 처음에 안보임 */
-}
-
-/* 모바일용 햄버거 버튼 */
-.hbtn {
-    left: 10px;
-    font-size: 15px;
-}
-
-/* 모바일용 검색버튼 */
-.sbtn {
-    right: 10px;
-    font-size: 21px;
-    font-weight: bold;
-}
-
-/* 1.4. 모바일 검색박스 */
-.mos {
-    padding: 15px 30px;
-    background-color: #fff;
-    display: none;
-    /* 처음에 숨기기 */
-}
-
-/* 검색속박스 */
-.mwrap {
-    position: relative;
-    /* 부모자격 */
-    width: 100%;
-    height: 35px;
-    background-color: #000;
-}
-
-/* 검색입력창 - 부모박스의 크기에 따라 유동적인 박스 */
-#search {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 50px;
-    bottom: 9px;
-}
-
-/* 입력양식 */
-#search input {
-    width: 100%;
-    height: 100%;
-    padding-left: 10px;
-}
-
-/* input박스는 일반 div박스와 다르기때문에 겉박스를 만들고
-채우기 형식으로 디자인함! */
-
-/* 검색버튼 */
-.scbtn {
-    position: absolute;
-    top: -3px;
-    right: -3px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* 1.5. 모바일 전체메뉴박스 (#top의 하위자식으로 편성) */
-#mobx {
-    padding-left: 15px;
-    padding-top: 6px;
-    padding-bottom: 30px;
-    background-color: #fff;
-    display: none;
-    /* 처음에 안보임 */
-}
-
-/* 1.5-1.모바일 GNb */
-.mognb {
-    padding-left: 15px;
-}
-
-.mognb a {
-    font-family: "Roboto";
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 2;
-    color: #333;
-}
-
-/* 1.5-2. 모바일 SNS */
-.mosns {
-    margin-top: 24px;
-    margin-left: 13px;
-}
-
 /* sns박스 a */
 .mosns a {
     display: inline-block;
@@ -543,33 +433,4 @@
 /* 마지막 li만 두껍게! */
 .blink li:last-child a {
     font-weight: bold;
-}
-
-/* 위로가기 버튼 */
-.tbtn {
-    position: fixed;
-    bottom: 0;
-    right: 75px;
-    width: 48px;
-    height: 35px;
-    text-align: center;
-    /* 가로중앙 */
-    line-height: 35px;
-    /* 세로중앙 */
-    color: #fff;
-    background-color: #333;
-    border-radius: 7px 7px 0 0;
-    /*둥근모서리 왼위 오른위 오른아래 왼아래 (시계방향) */
-    z-index: 999;
-
-    /* 트랜지션 속시이지! */
-    transition: background-color .3s;
-
-    display: none;
-    /* 처음에 안보임 */
-}
-
-/* 탑버튼 마우스 오버시 */
-.tbtn:hover {
-    background-color: #f00;
 }

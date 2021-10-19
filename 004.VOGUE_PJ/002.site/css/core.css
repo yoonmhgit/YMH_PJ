@@ -1,7 +1,6 @@
 @charset "utf-8";
-/* VOGUE PJ 공통 클래스, 웹폰트 - core.css */
+/* 공통 클래스, 웹폰트 - core.css */
 
-/* 웹폰트 */
 
 /* roboto체 + roboto condensed체 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap');
@@ -42,7 +41,7 @@ font-family: 'NanumBarunGothic', sans-serif;
 .rbx{   
     position: relative;
     /* 부모자격 - .rbxIn */
-    /* outline: 2px dotted orange; */
+    outline: 2px dotted orange;
 }
 /* 비율 밀기 가상요소 */
 .rbx::before{
@@ -107,11 +106,11 @@ font-family: 'NanumBarunGothic', sans-serif;
     border: 0px solid transparent; /* 투명 */
 
     /* 트랜지션 속시이지! */
-    transition: all .2s ease-in;
+    transition: all .1s ease-in;
 }
 /* .pbx에 마우스 오버시 보더 생기기 */
 .cbx:hover::after{
-    border: 20px solid #f00;
+    border: 13px solid #7d1dac;
 }
 
 /* 컨텐츠 타이틀 박스 */
