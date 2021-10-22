@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+
+
+/* ************배경이미지 공통************ */
+.bgc{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
